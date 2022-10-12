@@ -37,7 +37,10 @@ public class CampaignModule extends BaseClass {
 		
 		
 	}
-	
+	@Test
+	public void ModifyCampaign() {
+		
+	}
 	
 
 }

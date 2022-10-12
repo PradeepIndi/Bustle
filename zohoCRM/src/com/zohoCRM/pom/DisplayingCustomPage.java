@@ -9,6 +9,9 @@ public class DisplayingCustomPage {
 	@FindBy(xpath="//input[@value='New Campaign']")
 	private WebElement newCampaignBtn;
 	
+	@FindBy(xpath="//input[@value='New Lead']")
+	private WebElement newLeadBtn;
+	
 	public DisplayingCustomPage(WebDriver driver) {
 		PageFactory.initElements(driver,this );
 	}
@@ -16,5 +19,10 @@ public class DisplayingCustomPage {
 	public void setNewCampaignBtn() {
 		newCampaignBtn.click();
 	}
+
+	public WebElement getNewLeadBtn() {
+		return newLeadBtn;
+	}
+	
 
 }
