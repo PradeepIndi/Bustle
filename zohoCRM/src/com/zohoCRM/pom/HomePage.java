@@ -13,6 +13,9 @@ public class HomePage {
 	@FindBy(xpath="//a[text()='Campaigns']")
 	private WebElement campaignsTab;
 	
+	@FindBy(linkText = "Leads")
+	private WebElement leadsTab;
+	
 	public HomePage(WebDriver driver){
 		PageFactory.initElements(driver, this);	
 	}
@@ -24,6 +27,14 @@ public class HomePage {
 	public WebElement getCampaignsTab() {
 		return campaignsTab;
 	}
+
+	public WebElement getLeadsTab() {
+		return leadsTab;
+	}
+
+	
+
+	
 	
 	
 
