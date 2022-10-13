@@ -16,6 +16,7 @@ import com.zohoCRM.pom.LeadDetailsPage;
 @Listeners(com.zohoCRM.generic.ListenerImplementation.class)
 
 public class LeadsModule extends BaseClass {
+	
 	@Test(priority=3)
 	public void creteNewLead() throws IOException {
 		HomePage h=new HomePage(driver);
@@ -40,7 +41,7 @@ public class LeadsModule extends BaseClass {
 	}
 	@Test(priority=4)
 	public void modifyLead() {
-		
+
 	}
 
 }
