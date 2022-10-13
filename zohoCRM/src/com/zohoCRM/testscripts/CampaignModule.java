@@ -15,7 +15,7 @@ import com.zohoCRM.pom.HomePage;
 
 
 public class CampaignModule extends BaseClass {
-	@Test
+	@Test(priority=1)
 	public void createCampaign() {
 		HomePage h=new HomePage(driver);
 		h.getCampaignsTab().click();
@@ -33,8 +33,12 @@ public class CampaignModule extends BaseClass {
 		String actulName = cd.getCreatedCampNameTbx().getText();
 		String actulType = cd.getCreatedTypeList().getText();
 		Assert.assertEquals(actulName, "Pradeep");
-		Assert.assertEquals(actulType, "advertisement");
+		Assert.assertEquals(actulType, "Advertisement");
 		
+		
+	}
+	@Test(priority=2)
+	public void ModifyCampaign() {
 		
 	}
 	

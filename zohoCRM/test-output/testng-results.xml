@@ -1,40 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
+<testng-results ignored="2" total="6" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-04T12:44:42 IST" name="Default suite" finished-at="2022-10-04T12:45:18 IST" duration-ms="36324">
+  <suite started-at="2022-10-13T10:36:47 IST" name="Suite" finished-at="2022-10-13T10:37:06 IST" duration-ms="18602">
     <groups>
     </groups>
-    <test started-at="2022-10-04T12:44:42 IST" name="Default test" finished-at="2022-10-04T12:45:18 IST" duration-ms="36324">
-      <class name="com.zohoCRM.generic.BaseClass">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.zohoCRM.generic.BaseClass@188715b5]" started-at="2022-10-04T12:44:42 IST" name="openBrowser" finished-at="2022-10-04T12:45:03 IST" duration-ms="21430" status="PASS">
+    <test started-at="2022-10-13T10:36:47 IST" name="Test" finished-at="2022-10-13T10:37:06 IST" duration-ms="18602">
+      <class name="com.zohoCRM.testscripts.LeadsModule">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.zohoCRM.testscripts.LeadsModule@41fbdac4]" started-at="2022-10-13T10:36:47 IST" name="openBrowser" finished-at="2022-10-13T10:36:54 IST" duration-ms="6909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.zohoCRM.generic.BaseClass@188715b5]" started-at="2022-10-04T12:45:18 IST" name="closeBrowser" finished-at="2022-10-04T12:45:18 IST" duration-ms="532" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.zohoCRM.generic.BaseClass -->
-      <class name="com.zohoCRM.testscripts.CampaignModule">
-        <test-method is-config="true" signature="signIn()[pri:0, instance:com.zohoCRM.testscripts.CampaignModule@40ef3420]" started-at="2022-10-04T12:45:03 IST" name="signIn" finished-at="2022-10-04T12:45:09 IST" duration-ms="5580" status="PASS">
+        <test-method is-config="true" signature="signIn()[pri:0, instance:com.zohoCRM.testscripts.LeadsModule@41fbdac4]" started-at="2022-10-13T10:36:54 IST" name="signIn" finished-at="2022-10-13T10:36:57 IST" duration-ms="2749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method signature="createCampaign()[pri:0, instance:com.zohoCRM.testscripts.CampaignModule@40ef3420]" started-at="2022-10-04T12:45:09 IST" name="createCampaign" finished-at="2022-10-04T12:45:17 IST" duration-ms="7570" status="FAIL">
+        <test-method signature="creteNewLead()[pri:3, instance:com.zohoCRM.testscripts.LeadsModule@41fbdac4]" started-at="2022-10-13T10:36:57 IST" name="creteNewLead" finished-at="2022-10-13T10:37:00 IST" duration-ms="3204" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [advertisement] but found [Advertisement]]]>
+              <![CDATA[expected [pvt Ltd] but found [  pvt Ltd]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [advertisement] but found [Advertisement]
+              <![CDATA[java.lang.AssertionError: expected [pvt Ltd] but found [  pvt Ltd]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.zohoCRM.testscripts.CampaignModule.createCampaign(CampaignModule.java:36)
+at com.zohoCRM.testscripts.LeadsModule.creteNewLead(LeadsModule.java:37)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -66,12 +60,54 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- creteNewLead -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.zohoCRM.testscripts.LeadsModule@41fbdac4]" started-at="2022-10-13T10:37:00 IST" name="logOut" finished-at="2022-10-13T10:37:00 IST" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="signIn()[pri:0, instance:com.zohoCRM.testscripts.LeadsModule@41fbdac4]" started-at="2022-10-13T10:37:00 IST" name="signIn" finished-at="2022-10-13T10:37:01 IST" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="modifyLead()[pri:4, instance:com.zohoCRM.testscripts.LeadsModule@41fbdac4]" started-at="2022-10-13T10:37:01 IST" name="modifyLead" finished-at="2022-10-13T10:37:01 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyLead -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.zohoCRM.testscripts.LeadsModule@41fbdac4]" started-at="2022-10-13T10:37:01 IST" name="logOut" finished-at="2022-10-13T10:37:01 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.zohoCRM.testscripts.LeadsModule@41fbdac4]" started-at="2022-10-13T10:37:05 IST" name="closeBrowser" finished-at="2022-10-13T10:37:06 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.zohoCRM.testscripts.LeadsModule -->
+      <class name="com.zohoCRM.testscripts.CampaignModule">
+        <test-method is-config="true" signature="signIn()[pri:0, instance:com.zohoCRM.testscripts.CampaignModule@7722c3c3]" started-at="2022-10-13T10:37:01 IST" name="signIn" finished-at="2022-10-13T10:37:02 IST" duration-ms="694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="createCampaign()[pri:1, instance:com.zohoCRM.testscripts.CampaignModule@7722c3c3]" started-at="2022-10-13T10:37:02 IST" name="createCampaign" finished-at="2022-10-13T10:37:04 IST" duration-ms="2098" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- createCampaign -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.zohoCRM.testscripts.CampaignModule@40ef3420]" started-at="2022-10-04T12:45:17 IST" name="logOut" finished-at="2022-10-04T12:45:18 IST" duration-ms="408" status="PASS">
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.zohoCRM.testscripts.CampaignModule@7722c3c3]" started-at="2022-10-13T10:37:04 IST" name="logOut" finished-at="2022-10-13T10:37:04 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="signIn()[pri:0, instance:com.zohoCRM.testscripts.CampaignModule@7722c3c3]" started-at="2022-10-13T10:37:04 IST" name="signIn" finished-at="2022-10-13T10:37:05 IST" duration-ms="875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="ModifyCampaign()[pri:2, instance:com.zohoCRM.testscripts.CampaignModule@7722c3c3]" started-at="2022-10-13T10:37:05 IST" name="ModifyCampaign" finished-at="2022-10-13T10:37:05 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ModifyCampaign -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.zohoCRM.testscripts.CampaignModule@7722c3c3]" started-at="2022-10-13T10:37:05 IST" name="logOut" finished-at="2022-10-13T10:37:05 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
       </class> <!-- com.zohoCRM.testscripts.CampaignModule -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
