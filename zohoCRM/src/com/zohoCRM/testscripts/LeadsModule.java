@@ -14,7 +14,7 @@ import com.zohoCRM.pom.DisplayingCustomPage;
 import com.zohoCRM.pom.HomePage;
 import com.zohoCRM.pom.LeadDetailsPage;
 @Listeners(com.zohoCRM.generic.ListenerImplementation.class)
-
+@Test(priority=1)
 public class LeadsModule extends BaseClass {
 	
 	@Test(priority=3)
@@ -42,6 +42,11 @@ public class LeadsModule extends BaseClass {
 	@Test(priority=4)
 	public void modifyLead() {
 
+	}
+	
+	@Test
+	public void deleteLead() {
+		
 	}
 
 }

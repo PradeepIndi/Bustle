@@ -13,7 +13,7 @@ import com.zohoCRM.pom.HomePage;
 
 @Listeners(com.zohoCRM.generic.ListenerImplementation.class)
 
-
+@Test(priority = 0)
 public class CampaignModule extends BaseClass {
 	
 	@Test(priority=1)
