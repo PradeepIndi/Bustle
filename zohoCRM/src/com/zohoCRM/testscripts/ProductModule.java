@@ -10,5 +10,9 @@ public class ProductModule extends BaseClass{
 	public void createProduct() {
 		
 	}
+	@Test
+	public void editProduct() {
+		
+	}
 
 }
